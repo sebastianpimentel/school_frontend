@@ -1,0 +1,62 @@
+<div class="bg-component">
+    <div class="form">
+      <mat-card class="card">
+        <mat-card-title> Courses registration </mat-card-title>
+        <mat-card-content>
+          <div class="container">
+            <mat-form-field>
+              <input
+                [(ngModel)]="registerData.name"
+                matInput
+                placeholder="name"
+                required
+              />
+            </mat-form-field>
+            <mat-form-field>
+                <input
+                  [(ngModel)]="registerData.numMatter"
+                  matInput
+                  type="number"
+                  placeholder="number of component"
+                  required
+                />
+              </mat-form-field>
+            <mat-form-field>
+              <input
+                [(ngModel)]="registerData.time"
+                type="number"
+                matInput
+                placeholder="Time in hours"
+                required
+              />
+            </mat-form-field>
+            <mat-form-field>
+              <input
+                [(ngModel)]="registerData.price"
+                matInput
+                placeholder="price"
+              />
+            </mat-form-field>
+            <mat-form-field>
+                <input
+                  [(ngModel)]="registerData.teacher"
+                  matInput
+                  placeholder="Teacher"
+                  required
+                />
+              </mat-form-field>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            (click)="registerCourse()"
+            class="button colorButton"
+            mat-raised-button
+          >
+            Register
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+  
