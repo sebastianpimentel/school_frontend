@@ -11,7 +11,7 @@ import {
 @Component({
   selector: 'app-register-matter',
   templateUrl: './register-matter.component.html',
-  styleUrls: ['./register-matter.component.css']
+  styleUrls: ['./register-matter.component.css'],
 })
 export class RegisterMatterComponent implements OnInit {
   registerData: any;

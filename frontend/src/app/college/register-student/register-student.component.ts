@@ -11,7 +11,7 @@ import {
 @Component({
   selector: 'app-register-student',
   templateUrl: './register-student.component.html',
-  styleUrls: ['./register-student.component.css']
+  styleUrls: ['./register-student.component.css'],
 })
 export class RegisterStudentComponent implements OnInit {
   registerData: any;
@@ -36,4 +36,3 @@ export class RegisterStudentComponent implements OnInit {
 
   openSnackBarError() {}
 }
-
