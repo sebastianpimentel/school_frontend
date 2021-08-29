@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { RegisterCourseComponent } from './college/register-course/register-course.component';
-import { RegisterMatterComponent } from './college/register-matter/register-matter.component';
+import { RegisterAsignatureComponent } from './college/register-asignature/register-asignature.component';
 import { RegisterStudentComponent } from './college/register-student/register-student.component';
 import { RegisterTeacherComponent } from './college/register-teacher/register-teacher.component';
-import { LoginComponent } from './home/login/login.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: LoginComponent,
+    component: RegisterTeacherComponent,
     pathMatch: 'full',
   },
   {
@@ -21,17 +20,14 @@ const routes: Routes = [
     component: RegisterStudentComponent,
   },
   {
-    path: 'registerMatter',
-    component: RegisterMatterComponent,
+    path: 'registerAsignature',
+    component: RegisterAsignatureComponent,
   },
   {
     path: 'registerCourse',
     component: RegisterCourseComponent,
   }
-  ,{
-    path:"login",
-    component:LoginComponent,
-  }
+  
 ];
 
 @NgModule({

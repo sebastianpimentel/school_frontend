@@ -1,0 +1,29 @@
+<div class="bg-component">
+    <div class="form">
+      <mat-card class="card">
+        <mat-card-title> Record of subjects</mat-card-title>
+        <mat-card-content>
+          <div class="container">
+            <mat-form-field>
+              <input
+                [(ngModel)]="registerData.name"
+                matInput
+                placeholder="name"
+                required
+              />
+            </mat-form-field>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            (click)="registerAsignature()"
+            class="button colorButton"
+            mat-raised-button
+          >
+            Register
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+  

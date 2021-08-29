@@ -5,11 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './home/header/header.component';
 import { FooterComponent } from './home/footer/footer.component';
-import { LoginComponent } from './home/login/login.component';
 import { RegisterStudentComponent } from './college/register-student/register-student.component';
 import { RegisterTeacherComponent } from './college/register-teacher/register-teacher.component';
-import { RegisterMatterComponent } from './college/register-matter/register-matter.component';
+
 import { RegisterCourseComponent } from './college/register-course/register-course.component';
+import { RegisterAsignatureComponent } from './college/register-asignature/register-asignature.component';
+
 
 import { CollegeService } from './services/college.service';
 import { AuthGuard } from './guard/auth.guard';
@@ -26,16 +27,16 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    LoginComponent,
     RegisterStudentComponent,
     RegisterTeacherComponent,
-    RegisterMatterComponent,
-    RegisterCourseComponent
+    RegisterCourseComponent,
+    RegisterAsignatureComponent
   ],
   imports: [
     BrowserModule,

@@ -14,7 +14,7 @@
           </mat-form-field>
           <mat-form-field>
             <input
-              [(ngModel)]="registerData.id"
+              [(ngModel)]="registerData.identify"
               matInput
               placeholder="ID"
               required
@@ -25,22 +25,6 @@
               [(ngModel)]="registerData.specialty"
               matInput
               placeholder="specialty"
-              required
-            />
-          </mat-form-field>
-          <mat-form-field>
-            <input
-              [(ngModel)]="registerData.course"
-              matInput
-              placeholder="Course"
-              required
-            />
-          </mat-form-field>
-          <mat-form-field>
-            <input
-              [(ngModel)]="registerData.notes"
-              matInput
-              placeholder="Notes"
               required
             />
           </mat-form-field>
@@ -58,7 +42,7 @@
               [(ngModel)]="registerData.password"
               type="password"
               matInput
-              placeholder="Password"
+              placeholder="password"
               required
             />
           </mat-form-field>

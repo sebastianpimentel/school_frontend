@@ -14,37 +14,23 @@
           </mat-form-field>
           <mat-form-field>
             <input
-              [(ngModel)]="registerData.numMatter"
+              [(ngModel)]="registerData.hours"
               matInput
               type="number"
-              placeholder="number of component"
-              required
-            />
-          </mat-form-field>
-          <mat-form-field>
-            <input
-              [(ngModel)]="registerData.time"
-              type="number"
-              matInput
-              placeholder="Time in hours"
+              placeholder="number of hours"
               required
             />
           </mat-form-field>
           <mat-form-field>
             <input
               [(ngModel)]="registerData.price"
+              type="number"
               matInput
               placeholder="price"
-            />
-          </mat-form-field>
-          <mat-form-field>
-            <input
-              [(ngModel)]="registerData.teacher"
-              matInput
-              placeholder="Teacher"
               required
             />
           </mat-form-field>
+
         </div>
       </mat-card-content>
       <mat-card-actions>
